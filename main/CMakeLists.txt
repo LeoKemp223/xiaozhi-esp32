@@ -128,6 +128,7 @@ elseif(CONFIG_BOARD_TYPE_ESP32_CGC)
     set(BOARD_TYPE "esp32-cgc")  
 elseif(CONFIG_BOARD_TYPE_XINGZHI_AIO_S3)
     set(BOARD_TYPE "xiaozhi-all-in-one-s3")
+    spiffs_create_partition_image(storage "${CMAKE_CURRENT_SOURCE_DIR}/boards/${BOARD_TYPE}/image" FLASH_IN_PROJECT)
 endif()
 file(GLOB BOARD_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/boards/${BOARD_TYPE}/*.cc

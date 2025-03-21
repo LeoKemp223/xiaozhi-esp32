@@ -18,6 +18,12 @@ idf.py menuconfig
 Xiaozhi Assistant -> Board Type -> xiaozhi All in One 多合一版本
 ```
 
+**修改分区表：**
+
+```
+Partition Table -> Custom partition CSV file -> partitions_16M_FS.csv
+```
+
 **编译：**
 
 ```bash
